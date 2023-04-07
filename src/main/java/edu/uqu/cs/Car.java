@@ -21,7 +21,7 @@ public class Car{
      * private dataType name;
      *
      */
-
+    
     /************ Part 2 **************/
     /**
      * Define a default constructor and set 
@@ -33,7 +33,7 @@ public class Car{
      *      //body
      * }
      */
-
+    
     /************ Part 3 **************/
     /**
      * Define all getter methods below
@@ -43,7 +43,7 @@ public class Car{
      *      return this.InstanceVariableName;
      * }
      */
-
+         
 
     /************ Part 4 **************/
     /**
@@ -54,8 +54,8 @@ public class Car{
      * }
      *
      */
-
-
+    
+           
     /************ Part 5 **************/
     /**
      * Implement the following two methods
@@ -63,6 +63,42 @@ public class Car{
      * moveCarIn() to set the inOutGarage flag to true;
      *
      */
+    
+
+    private String model;
+    private boolean inOutGarage;
+    
+    public Car()
+    {
+        inOutGarage=false;
+        model="";
+    }
+    public void moveCarOut()
+    {
+        inOutGarage=false;
+        
+    }
+    public void moveCarIn()
+    {
+        inOutGarage=true;
+    }
+    public String getModel()
+    {
+        return model;
+    } 
+    public void setModel(String m)
+    {
+         model=m;
+    }
+    
+     public boolean getinOutGarage() {
+            return inOutGarage;
+        }
+    
+    public void setInstanceVariableName(boolean inOutGarage) {
+            this.inOutGarage = inOutGarage;
+    
+    }
 
 
 
